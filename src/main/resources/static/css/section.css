@@ -1,0 +1,26 @@
+html {
+    overflow: hidden;
+}
+
+html, body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+#section2 {
+    background-color: coral;
+}
+
+#section3 {
+    background-color: aqua;
+}

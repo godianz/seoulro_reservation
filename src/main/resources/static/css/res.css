@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin:0; 
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    width: 130vh;
+    margin:30px;
+}
+
+/* header */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.today {
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid;
+}
+
+.year-month {
+    padding:20px 50px;
+    font-size: 30px;
+}
+
+.nav-btn {
+    border:none;
+    background:none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* reserve */
+.reserve {
+    display: flex;
+    margin-top: 10px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    padding:0 10px 10px 10px;
+}
+.circle {
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    border: 10px solid rgb(151, 198, 172);
+    border-radius: 50%;
+}
+
+.ing {
+    border:10px solid rgb(171, 151, 198);
+}
+
+.complete {
+    border:10px solid rgb(83, 82, 90);
+}
+.explain {
+    padding-left: 10px;
+}
+
+/* main */
+.main {
+    display: block;
+}
+.days {
+    display: flex;
+    text-align: left;
+    border-right: 1px solid #c8c8c8;
+}
+
+.day {
+    width: calc(100% / 7);
+    border-left:1px solid #c8c8c8;
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    padding:10px 0px 10px 10px;
+    font-size: 15px;
+}
+
+.container{
+    width: calc(100% / 7);
+    height: 250px;
+    border-left: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    font-size: 15px;
+    max-width: calc(100% - 38px);
+}
+.dates {
+    display: flex;
+    flex-flow: row wrap;
+    border-right: 1px solid #c8c8c8;
+}
+
+.date {
+    margin:10px;
+}
+
+.currnet {
+    margin:3px 5px 5px 10px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.situation {
+    display: flex;
+    margin:3px 5px 5px 0;
+    cursor:pointer;
+}
+
+.circle_situation {
+    width: 10px;
+    height: 10px;
+    border:10px solid rgb(151, 198, 172);
+    border-radius: 50%;
+    margin:3px 5px 5px 0;
+}
+
+.section {
+    margin:3px 5px 5px 0;
+    overflow: hidden;         /* 글자 수 숨김  */
+    text-overflow: ellipsis;  /* 부모요소 display: block -> ecllipsis 생략부호 표시 */
+    white-space: nowrap;      /* nowrap 줄바꿈 안함*/
+}
+
+.day:nth-child(7n),
+.container:nth-child(7n) {
+  color: #396EE2;
+}
+
+.day:nth-child(7n+1),
+.container:nth-child(7n+1) {
+   color:#D13E3E;
+}

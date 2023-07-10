@@ -1,0 +1,89 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    background: url("/img/bg1.jpg") no-repeat center center fixed;
+    background-size: cover;    
+    background-position: center;
+    min-height: 100%;
+    font-family: 'Fjalla One', sans-serif;
+    text-transform: uppercase;
+}
+
+.bg {
+    width: 80%;
+    height: 80vh;
+    margin: 100px auto;
+    background-color: rgba(26, 33, 41, 0.5);
+}
+
+.container {
+    display: block;
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+    max-width: 450px; /* 글자 최대 너비 */
+    transform: translate(-50%, -50%);
+}
+
+.title{
+  font-size: 65px;
+  line-height: 70px;         /* 줄 높이 */
+  letter-spacing: 2px;       /* 글자사이 간격 */
+}
+
+.words {  
+    display: block;
+    float: left;
+    left: 50%;
+    position: relative;
+    text-shadow: 3.5px 2px 2px #57414e;
+    transform: translateX(-50%) rotate(-7deg); /* translate(방향)이동거리값, rotate():음수 반시계방향회전 */
+}
+
+/* 버튼 */
+.moving {
+    display: block;
+    top:65%;
+    float: left;
+    left: 50%;
+    position: absolute;   
+    transform: translateX(-50%) rotate(-5deg);
+    animation: fadeInLeft 2s;
+}
+
+.yes {
+    transform: rotate(-5deg);
+    text-shadow: 4px 2px 2px #57414e;
+    border: none;
+    background-color: transparent;
+    position: relative;
+
+    font-family: 'Fjalla One', sans-serif;    
+    text-transform: uppercase;
+    font-size: 60px; 
+    cursor:pointer;
+    color: #3984e6;
+    margin-right: 5px;
+}
+
+.bus {
+    width: 70px;
+    position: relative;
+    transform: rotate(-5deg);
+    cursor: pointer;
+}
+
+@keyframes fadeInLeft {
+        from {
+            opacity: 0;
+            transform: translate(-200%);
+        }
+        to {
+            opacity: 1;
+            transform:translateX(-50%) rotate(-5deg);
+        }
+    }
