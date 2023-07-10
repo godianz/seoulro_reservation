@@ -32,7 +32,7 @@
         <div class="period">
             <div class="title_period">숙박기간</div>
             <div class="date">
-                <img src="calendar.png" class="calendar_icon">
+                <img src="../img/calendar.png" class="calendar_icon">
                 <input type="text" name="datetime" class="datetime" value=""/>
                 <div class="consecutive">박</div>
             </div>
@@ -41,7 +41,7 @@
         <div class="room-container">
 
         <div class="img-room">
-            <img src="camping.jpg" width="250px">
+            <img src="../img/camping.jpg" width="250px">
         </div>
 
         <div class="explain-box">
