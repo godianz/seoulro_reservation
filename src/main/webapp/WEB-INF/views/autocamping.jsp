@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
-<link rel="stylesheet" href="../css/autocamping.css">
+<link rel="stylesheet" href="../css/common_section.css">
 </head>
 <body>
     <div class="container">
