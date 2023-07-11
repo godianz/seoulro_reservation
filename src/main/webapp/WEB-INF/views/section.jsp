@@ -18,11 +18,11 @@
     </div>
 
     <div class="section" id="section2">
-
+<c:import url="./caravan.jsp"/>
     </div>
 
     <div class="section" id="section3">
-
+<c:import url="./autocamping.jsp"/>
     </div>
 
 </body>

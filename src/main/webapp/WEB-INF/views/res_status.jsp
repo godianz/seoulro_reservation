@@ -62,17 +62,17 @@
         <div class="people">
         <div class="adult">성인</div>
         <div class="adult-btn" id="add-btn">
-            <button class="minus-btn" onclick='count("decrease")'>-</button>
+            <button class="minus-btn" id="btn" onclick='count("decrease")'>-</button>
             <input type="text" id="result" value="1">
-            <button class="plus-btn" onclick='count("increase")'>+</button>
+            <button class="plus-btn"  id="btn" onclick='count("increase")'>+</button>
         </div>
         </div>
-        <div class="people">
-        <div class="adult">아동</div>
+        <div class="people-1">
+        <div class="child">아동</div>
         <div class="child-btn" id="add-btn">
-            <button class="minus-btn" onclick='count("minus")'>-</button>
+            <button class="minus-btn" id="btn"  onclick='count("minus")'>-</button>
             <input type="text" id="result-1" value="0">
-            <button class="plus-btn" onclick='count("plus")'>+</button>
+            <button class="plus-btn" id="btn"  onclick='count("plus")'>+</button>
         </div>
     </div>
     </div>
@@ -80,6 +80,9 @@
         <div class="price-box">
             <button class="select-btn">선택</button>
             <div class="price">원</div>
+        </div>
+        
+        <div>
         </div>
 
         </div>    

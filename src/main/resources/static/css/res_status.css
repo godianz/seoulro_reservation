@@ -1,148 +1,166 @@
-    *{
-        margin:0;
-        padding:0;
-    }
-    .container {
-    box-sizing: border-box;
-    width: 65vw;
-    height: 80vh;
-    margin: 100px auto;
-    }
+*{
+    margin:0;
+    padding:0;
+}
+.container {
+	box-sizing: border-box;
+	width: 1240px;
+	height: 80vh;
+	margin: 100px auto;
+}
 
 /* detail */
-    .header {
-        display: flex;
-        border: 1px solid;
-        font-size: 20px;
-    }
-    .row-header {
-        font-weight: bold;
-        padding:20px;
-    }
-    .row-table {
-        padding:20px;
-    }
-
-
+.header {
+    display: flex;
+    border: 1px solid;
+    font-size: 20px;
+}
+.row-header {
+    font-weight: bold;
+    padding:20px;
+}
+.row-table {
+    padding:20px;
+}
 /* calendar */
-    .period {
-        margin:20px 0;
-        font-size: 22px;
-        font-weight: bold;
-    }
-    .title_period{
-        margin-bottom: 20px;
-    }
-    .date {
-        display: flex;
-    }
-    .calendar_icon {
-        border: 1px solid;
-        width: 50px;
-    }
-    .datetime {
-        width: 400px;
-        height: 50px;
-        font-size: 18px;
-        text-align: center;
-    }
-    .consecutive {
-        border: 1px solid;
-        width: 100px;
-        font-size: 18px;
-        text-align: center; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+.period {
+    margin:20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.title_period{
+    margin-bottom: 20px;
+}
+.date {
+    display: flex;
+}
+.calendar_icon {
+    border: 1px solid;
+    width: 50px;
+}
+.datetime {
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+}
+.consecutive {
+    border: 1px solid;
+    width: 100px;
+    font-size: 18px;
+    text-align: center; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-    /* datepicker revise */
-    .daterangepicker {
-        width: 600px;
-    }
-    .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
-        font-size: 18px;
-        padding:3px;
-    }
-    .daterangepicker .drp-calendar.right {
-        margin-left: 13px;
-    }
-    .daterangepicker .drp-calendar {
-        max-width: 283px;
-    }
-    .daterangepicker .drp-selected {
-        font-size: 18px;
-    }
+/* datepicker revise */
+.daterangepicker {
+    width: 600px;
+}
+.daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+    font-size: 18px;
+    padding:3px;
+}
+.daterangepicker .drp-calendar.right {
+    margin-left: 13px;
+}
+.daterangepicker .drp-calendar {
+    max-width: 283px;
+}
+.daterangepicker .drp-selected {
+    font-size: 18px;
+}
 
-    /* room */
-
-    .title_room {
-        font-size: 22px;
-        font-weight: bold;
-        border-bottom: 1px solid;
-    }
-    .explain-box {
-      display: flex;
-      flex-direction: column;
-      font-size: 18px;
-      margin:0 10px;
-      justify-content: center;
-    }
-    .people-box{
-        display: flex;
-        flex-direction: column;
-        font-size: 18px;
-        justify-content: center;
-        margin:0 30px;
-    }
-
-    .people {
-        display: flex;
-    }
-
-    .adult-btn,.child-btn {
-        display: flex;
-    }
-
-    .plus-btn, .minus-btn {
-        font-size: 30px;
-        padding: 5px;
-        width: 50px;
-        height: 50px;
-    }
-
-    .price-box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin:0 30px;
-        font-size: 18px;
-    }
-
-    .now-btn {
-        border: 1px solid;
-        color:white;
-        background-color: rgb(151, 198, 172);
-        font-size: 14px;
-        width: fit-content;
-        padding:2px;
-        border-radius: 5px;
-    }
-    .select_room {
-        font-size: 22px;
-        font-weight: bold;
-    }
-    .detail  {
-        font-size: 14px;
-    }
-    .room-container {
-        display: flex;
-        flex-direction: row;
-        margin-top: 30px;
-        padding-bottom: 30px;
-        border-bottom: 1px solid;
-    }
-
-    .price-box {
-        
-    }
+/* room */
+.title_room {
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 1px solid;
+}
+.explain-box {
+	display: flex;
+	flex-direction: column;
+	font-size: 18px;
+	margin:0 10px;
+	justify-content: center;
+}
+.people-box{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    justify-content: center;
+    align-items:center;
+    margin:0 30px;
+}
+.people,.people-1 {
+    display: flex;
+    align-items: center;
+    margin:2px;
+}
+.adult-btn,.child-btn {
+    display: flex;
+    margin:5px;
+}
+.plus-btn, .minus-btn {
+    font-size: 20px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: transparent;
+	border: 1px solid #bdbdbd;
+	cursor:pointer;
+}
+#result, #result-1 {
+	width:80px;
+	text-align:center;
+	border:1px solid #bdbdbd;
+	border-left: none;
+	border-right: none;
+}
+.price-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 30px;
+    font-size: 18px;
+}
+.select-btn {
+	font-size: 23px;
+	width: 100px;
+	color: #757575;
+	margin-bottom:10px;
+	cursor:pointer;
+	background-color: transparent;
+	border: 1px solid #bdbdbd;
+	
+}
+.price {
+	display:flex;
+	justify-content: flex-end;
+}
+.now-btn {
+    border: 1px solid;
+    color:white;
+    background-color: rgb(151, 198, 172);
+    font-size: 14px;
+    width: fit-content;
+    padding:2px;
+    border-radius: 5px;
+}
+.select_room {
+    font-size: 22px;
+    font-weight: bold;
+}
+.detail  {
+    font-size: 14px;
+}
+.room-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid;
+    white-space: nowrap;
+}
