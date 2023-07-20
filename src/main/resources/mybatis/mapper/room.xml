@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.study.springboot.dao.roomdao">
+
+<insert id="room" parameterType="com.study.springboot.dto.roomdto">>
+	insert into room (room_idx,room_name,room_img,room_info,room_price)
+	values ()
+</insert>
+</mapper>

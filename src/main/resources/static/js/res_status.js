@@ -1,3 +1,4 @@
+//달력설정
 $('.datetime').daterangepicker({
     "locale": {
         "format": "YYYY년MM월DD일",
@@ -19,6 +20,7 @@ $('.datetime').daterangepicker({
 
 });
 
+//인원수 설정
 function count(type){
 
 var number = Number($("#result").val());
@@ -65,5 +67,16 @@ if(number + number1 < 4){
     document.getElementsByClassName('plus-btn')[0].setAttribute('disabled',true);
     document.getElementsByClassName('plus-btn')[1].setAttribute('disabled',true);
 }
-
  }
+//요일수 표시
+$('.applyBtn').on('click', function (){
+	let startdate = document.getElementsByClassName(".start-btn").innerText;
+	
+	console.log(startdate);
+
+})
+ 
+ 
+ 
+ 
+ 

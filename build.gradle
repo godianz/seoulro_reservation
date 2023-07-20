@@ -28,7 +28,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	
 	//DB설정
-	runtimeOnly 'com.oracle.database.jdbc:ojdbc8'
+    runtimeOnly 'mysql:mysql-connector-java'
 	implementation 'javax.servlet:jstl'
 	implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
 	

@@ -50,7 +50,7 @@
             </div>
 
             <div class="room-box">    
-                <div class="select_room">카라반</div>
+                <div class="select_room" name="res_room">카라반</div>
             </div>
 
             <div class="detail-box">
@@ -63,7 +63,7 @@
         <div class="adult">성인</div>
         <div class="adult-btn" id="add-btn">
             <button class="minus-btn" id="btn" onclick='count("decrease")'>-</button>
-            <input type="text" id="result" value="1">
+            <input type="text" id="result" value="1" readonly>
             <button class="plus-btn"  id="btn" onclick='count("increase")'>+</button>
         </div>
         </div>
@@ -71,7 +71,7 @@
         <div class="child">아동</div>
         <div class="child-btn" id="add-btn">
             <button class="minus-btn" id="btn"  onclick='count("minus")'>-</button>
-            <input type="text" id="result-1" value="0">
+            <input type="text" id="result-1" value="0" readonly>
             <button class="plus-btn" id="btn"  onclick='count("plus")'>+</button>
         </div>
     </div>
@@ -88,4 +88,33 @@
         </div>    
     </div>
 </body>
+
+<script>
+/* 
+$('.select-btn').on('clcick',function(){
+	
+	var room = $('#res_room').val();
+	var adult = $('#result').val();
+	var child = $('#result-1').val();
+	var 
+	
+
+$.ajax({
+    async : true,
+    type : 'POST',
+    data : JSON.stringify(data),
+    url : "/reservation",
+    contentType : "application/json; charset-UTF-8",
+    success : function(data) {
+    console.log(data);
+      alert("저장되었습니다.");
+  	location.href = '/admin/admin_diary';
+    },
+    error : function(error) {
+      alert("다시 시도해주세요.");
+      return;
+    }
+  });
+}); */
+</script>
 </html>
