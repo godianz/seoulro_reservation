@@ -3,7 +3,6 @@ package com.study.springboot;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class Main_Controller {
@@ -37,8 +36,8 @@ public class Main_Controller {
 		model.addAttribute("mainPage", "res_status.jsp");
 		return"index";
 	}
-	@PostMapping("/reservation")
-	
+//	@PostMapping("/reservation")
+//	
 	
 	
 	

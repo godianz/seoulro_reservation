@@ -38,8 +38,26 @@ prevDates.unshift(prevDate- i);                //배열 맨 앞에 이전달(n-1
 
 
 const dates = prevDates.concat(thisDates, nextDates); //concat:인자로 주어진 배열이나 값들을 기존 배열에 합쳐서 새 배열 반환
-
-dates.forEach((date, i) => {       
+console.log(prevDates);
+dates.forEach((date, i) => {   if(prevDates[i] == dates[i] ){
+	dates[i] = `<div class="container">
+                <div class="date">${viewMonth-1}/${date}</div>
+                  <div class="currnet">
+                    <div class="situation">
+                    <div class="circle_situation"></div>
+                    <div class="section">오토캠핑(A구역)</div>
+                    </div>
+                    <div class="situation">
+                    <div class="circle_situation"></div>
+                    <div class="section">글램핑(B구역)</div>
+                    </div>  
+                    <div class="situation">
+                    <div class="circle_situation"></div>
+                    <div class="section">카라반(C구역)</div>
+                    </div>      
+                  </div>  
+              </div>`;
+}else{
   dates[i] = `<div class="container">
                 <div class="date">${date}</div>
                   <div class="currnet">
@@ -57,6 +75,7 @@ dates.forEach((date, i) => {
                     </div>      
                   </div>  
               </div>`;//for문으로 i만큼 날짜 하나씩 자동 증가 
+}    
 }) 
 
 document.querySelector('.dates').innerHTML = dates.join(''); //배열의 모든 요소를 연결해 하나의 문자열 join();=> ","

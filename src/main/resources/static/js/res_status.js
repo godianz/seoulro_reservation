@@ -70,11 +70,36 @@ if(number + number1 < 4){
  }
 //요일수 표시
 $('.applyBtn').on('click', function (){
-	let startdate = document.getElementsByClassName(".start-btn").innerText;
-	
-	console.log(startdate);
+	let count = $("[class*='in-range']").not("[class*='off']").length + $('.start-date').length - 1;
 
+	document.querySelector('.days').textContent = `${count}`;
 })
+
+//가격표시
+$('.select-btn').on('clcick',function(){
+	
+	var room = $('#res_room').val();
+	var adult = $('#result').val();
+	var child = $('#result-1').val();
+
+
+$.ajax({
+    async : true,
+    type : 'POST',
+    data : JSON.stringify(data),
+    url : "/reservation",
+    contentType : "application/json; charset-UTF-8",
+    success : function(data) {
+    console.log(data);
+      alert("저장되었습니다.");
+  	location.href = '/admin/admin_diary';
+    },
+    error : function(error) {
+      alert("다시 시도해주세요.");
+      return;
+    }
+  });
+});
  
  
  

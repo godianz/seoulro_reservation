@@ -20,6 +20,5 @@ public class order_status {
 	private Date order_date;
 	private String order_price;
 	
-	
 }
 	
